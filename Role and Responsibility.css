@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+:root {
+  --color-light: white;
+  --box-shadow-one: 0 0 5px rgb(225, 207, 207);
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif, "Poppins", sans-serif;
+}
+.first-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: white;
+}
+img {
+  border: 5px solid white;
+  width: 550px ;
+  height: 200px;
+}
+.switch-lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid white;
+  color: dodgerblue;
+  font-size: 20px;
+  cursor: pointer;
+  width: 150px;
+  height: 70px;
+}
+.eng-first {
+  color: rgb(13, 14, 16);
+}
+.switch-lang-item :hover {
+  color: dodgerblue;
+}
+.switch-lang-item-active{
+  color: black;
+
+}
+a {
+  text-decoration: none;
+}
+.eng {
+  border: 2px solid white;
+  padding: 7px 20px;
+}
+.top-page {
+  display: flex;
+ align-items: center; 
+  background-color: lightslategray;
+  /* padding: 20px; */
+}
+/* container-width */
+.container-width, .p1 {
+  max-width: 1700px;
+  margin: 40px auto;
+}
+.navecation {
+  padding: 0.5rem, 0.5rem;
+  /* margin:0 auto; */
+  display: flex; 
+  justify-content: space-between; 
+   /* background-color: yellow;  */ */ */
+   box-shadow:0 4px 12px lightslategray;
+   border-radius: 10px;
+}
+.nav-list{
+  list-style-type: none;
+  display:flex;
+  align-items: center;
+  gap:2rem;
+}
+.nav-link .drop-down>li{
+  list-style-type:none ;
+  height:100%; 
+  padding:0.5rem 1rem;
+  /* font-weight: 60dag;  */
+  cursor: pointer;
+  text-decoration: none;
+}
+.drop-down{
+  position:absolute;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 0.5rem;
+  background-color:white;
+  color:black;
+  border: 1px solid gray;
+  border-radius: 20px;
+  width: 300px;
+  /* z-index:5; */
+  transition: all 0.5 ease;
+  box-shadow: 0.5rem;
+  display:none; 
+}
+.nav-link:hover{
+  /* background-color: black; */
+  color:var(--color-light);
+  border-radius: 0.5rem;
+  transition: all 0.5 ease;
+
+}
+.services>a{
+  display:flex;
+}
+.services:hover .drop-down{
+  display:block;
+}
+/* .fa-solid fa-caret-down{
+  gap:0 1rem;
+} */
+.icon{
+  position:relative;
+  right:-8px;
+  transform: rotate(0deg);
+  /* transition: 0.3s ease-in-out; */
+
+}
+
+/* /* input   */{
+height: 20px; 
+}
+ul {
+  list-style-type: none;
+}
+a {
+  transition: all 0.5s;
+  text-decoration: none;
+  /* color: var(--color-light) */
+  color:black;
+}
+a,
+p,
+li,
+span {
+  font-size: 2rem;
+}
+h2,
+h3,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
+}
+/* navecationbar/ */
+.nav-list {
+  /* transition: all 1s; */
+  display: flex;
+  gap: 2.5rem;
+ } 
+ .nav-link > a { 
+  color: var(--color-light);
+}
+.nav-link > a:hover {
+  color:black;
+  /* background-color: aqua; */
+  /* border: 1px solid lightslategray; */
+ border-radius: 20px;
+  outline: none;
+  padding: 0.5rem 0.5rem;
+} 
+/* input */
+.container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  padding-right: 30px;
+  background-color:lightslategray;
+  margin: 1rem 0;
+}
+
+input:focus {
+  border-color: dodgerblue;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+}
+input {
+  border: 1px solid green;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+input:hover{
+  border-color:lightblue;
+  padding:1.2rem 1.2rem;
+}
+ .block1{
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     width: 100%;
+     font-size:30px;
+     height:200px;
+     padding: 20px 30px;
+     /* border:5px solid black; */
+     /* /* background-color:white; */
+   }
+   h1{ 
+     display:flex;
+    justify-content: center;
+    /* align-items:center;  */
+     /* text-align: center; */
+    border:10px solid lightslategray;
+    padding: 20px 100px;
+    border-left:none;
+    border-right: none;
+    border-top: none; 
+    color:lightslategray; 
+  } 
+ ol, p{
+font-size: 30px;
+ }
+ .sentence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     text-align: center; 
+    width: 50%;
+    height: 200px;
+    background-color:lightslategray;
+  }
+  .lastblock{
+     display:flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 200px;
+    background-color: lightslategray;
+  
+  }
+    
+  
