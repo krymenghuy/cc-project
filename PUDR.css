@@ -271,10 +271,10 @@ border: 1px solid gray;
     /* margin: 1rem; */
     padding:0.5rem 1rem;
 }
- .file >p,a{
+ .file {
     display:flex;
     /* margin:0.5rem; */
-    font-size:2rem;
+    /* font-size:2rem; */
     padding: 0 2rem;
 } 
 .file{

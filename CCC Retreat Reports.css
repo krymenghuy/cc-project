@@ -24,11 +24,11 @@ body {
   height: 200px;
   background-color: white;
 }
-/* img {
+.photo>img {
   border: 5px solid white;
   width: 550px ;
   height: 200px;
-} */
+} 
 .switch-lang {
   display: flex;
   justify-content: center;
@@ -69,7 +69,7 @@ a {
   margin: 40px auto;
 }
 .navecation {
-  padding: 0.5rem, 0.5rem;
+  padding: 2rem,auto;
   /* margin:0 auto; */
   display: flex; 
   justify-content: space-between; 
@@ -147,13 +147,13 @@ li,
 span {
   font-size: 2rem;
 }
-/* h2,
+h2,
 h3,
 h3,
 h4,
 h5 {
   font-size: 2rem;
-} */
+}
 /* navecationbar/ */
 .nav-list {
   /* transition: all 1s; */
@@ -228,7 +228,7 @@ font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-     text-align: center; 
+    text-align: center; 
     width: 50%;
     height: 200px;
     background-color:lightslategray;
@@ -244,52 +244,51 @@ font-size: 30px;
   }
 .PDF{
     display:flex;    
-    width: 100%;
-    height:800px;
-    background-color: white;
+    width: 100%; 
+    height:700px;
+    background-color:white;
     gap: 2rem;
     padding: 2rem 2rem;
 }
-.img{
-  width: 30% !important;
-}
 .img>img{
-    width: 100%;  
-    border: 1px solid white;
-     /* object-fit:cover;  */
-}
-.PDF-1{
-    display:flex;
-     align-items: center;  
-     width: 100%; 
-    /* height: 100%; */
- background-color: white;
- padding: 0 2rem;
- border: 1px solid gray;
+  width:190px;
 }
 
-.PDF-first{
-  width: 70% !important; 
+.img{
+     width:100%; 
+     border:1px solid white;
+     padding:0 20px;
+}
+.PDF-1{
+     display:flex;
+     align-items: center; 
+     width: 100%;
+     /* margin: 1rem;  */
+     /* padding: 5px 5px; */
+    /* height: 100%; */
+     gap:2rem; 
+ background-color: white;
+   padding: 1rem 1rem; 
+border: 1px solid gray; 
 }
 .PDF-first>h2{
-    font-size:2rem;
-     /* margin: 1rem;  */
-    padding:0 1rem;
-    /* text-align: justify;  */
+    font-size:3rem;
+    margin: 1rem; 
+    padding:0.5rem 1rem;
 }
- .file >p,a{
+ .file{
     display:flex;
-     /* margin:0.5rem;  */
-    font-size:2rem;
-    padding: 0 2rem;
+    /* margin:0.5rem; */
+    /* /* font-size:2rem; */
+    padding: 0 2rem; 
 } 
 .file{
   display:flex;
 }
-.grid-1x5 {
+ .grid-1x5 {
   display:grid;
   grid-template-columns:repeat(3,1fr);
-} 
+}  
 .btn{
     font-size:4rem;
     font-weight: bold;
@@ -301,7 +300,9 @@ font-size: 30px;
     color:white;
 }
 .btn-primary{
-    background-color:gray;    
+    background-color:gray; 
+
+    
 }
 .buttom{
     display:flex;
@@ -310,4 +311,10 @@ font-size: 30px;
     gap:3rem;
     height:200px;
   
-} 
+}
+.btn-primary>i{
+  /* border-bottom:-150px; */
+  margin:1rem;
+}
+
+

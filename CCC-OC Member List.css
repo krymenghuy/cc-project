@@ -269,10 +269,10 @@ font-size: 30px;
     /* margin: 1rem; */
     padding:0 1rem;
 }
- .file >p,a{
+ .file{
     display:flex;
     /* margin:0.5rem; */
-    font-size:3rem;
+    /* font-size:3rem; */
     padding: 0 1rem;
 } 
 .file{

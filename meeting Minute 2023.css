@@ -281,12 +281,10 @@ font-size: 30px;
     border-right:2px solid black;
     
 }
-.active{
-  background-color: gray;
-}
+
 .manu-list>a{
   /* border: 1px solid black; */
-  padding: 2rem;
+  padding: 3rem;
 }
 .manu-list>a:hover{
   background-color:rgb(226, 216, 216);
@@ -353,4 +351,16 @@ border: 1px solid gray;
   display:grid;
   grid-template-columns:auto auto;
 } 
-
+.active>a{
+  background-color: gray;
+  transition: .3s ease-in-out;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.active>a:hover{
+  background-color:#396b8c;
+  color: #fff;
+  transition: .3s ease-in-out;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}

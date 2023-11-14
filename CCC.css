@@ -327,10 +327,10 @@ border: 1px solid gray;
     margin: 1rem; 
     padding:1rem 0;
 }
-.file >p,a{
+.file {
     display:flex;
     /* margin:0.5rem; */
-    font-size:2rem;
+    /* font-size:2rem; */
      padding: 0 1rem; 
 } 
 .file{
