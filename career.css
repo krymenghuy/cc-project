@@ -272,7 +272,7 @@ input:hover{
   justify-content: center;
   align-items:center; */
   text-align: center;
-  border:3px solid #396b8c;
+   border:3px solid white;
   padding:2rem;
   margin: 2rem auto;
   /* width: 700px; */
@@ -357,15 +357,7 @@ input:hover{
   border: 2px solid red;
   /* width: 300px; */ 
 } 
-.icon{
-  /* padding-right:3rem; */
-  border: 1px solid #396b8c;
-  width:20px; 
-  /* margin: 2rem 0; */
-  padding:1rem 0.5rem;
-  /* padding-bottom:3rem; */
-  /* padding-top:2rem ; */
-}
+
 .nav-link-1{
   display:flex;
   align-items:center;

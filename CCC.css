@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -224,7 +225,7 @@ a,
 p,
 li,
 span {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 h2,
 h3,
@@ -486,7 +487,7 @@ input:hover{
 .PDF{
     display:flex;    
     width: 100%;
-    /* height:280vh; */
+    height:280vh; 
     background-color:white;
      gap: 2rem; 
     padding: 2rem 2rem;

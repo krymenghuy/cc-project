@@ -5,11 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
   <header class="body-one">
+    <button onclick="scrollToTop()" id="backToTopBtn">
+      <div class="my_btn"><i class="fa-solid fa-angles-up"></i></div></i>
+    </button>
     <div class="first-page">
       <div class="photo">
         <img src="images/logo - Copy.png" alt="logo">
@@ -48,7 +52,8 @@
                     <!-- <div class="drop-linking"> -->
                     <li><a class="drop-link" href="Membership.html">Membership</a></li>
                     <li><a class="drop-link" href="Right of Member.html">Right of Member</a></li>
-                    <li><a class="drop-link" href="Responsibilities of the member.html">Responsibilities ofthemember</a></li>
+                    <li><a class="drop-link" href="Responsibilities of the member.html">Responsibilities ofthemember</a>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -162,23 +167,68 @@
     </section>
     <!-- </header>  -->
     <section class="hero">
-      <div class="grid-1X2 container-width grid-hero">
-        <div class="red">
-          <div class="hero-desc hero-2">
-            <h3 class="hero-heading"> His Excellency Hem Vanndy Chair of CCC</h3>
-            <p> His Excellency Hem Vanndy chaired the Country Dialogue (on
-              22-23 January 2020 at Phnom Penh Hotel), the
-              open and inclusive forum for all stakeholders, communities,
-              CSOs, donors.
-            </p>
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="grid-1X2 container-width grid-hero">
+            <div class="red">
+              <div class="hero-desc hero-2">
+                <h3 class="hero-heading"> His Excellency Hem Vanndy Chair of CCC</h3>
+                <p> His Excellency Hem Vanndy chaired the Country Dialogue (on
+                  22-23 January 2020 at Phnom Penh Hotel), the
+                  open and inclusive forum for all stakeholders, communities,
+                  CSOs, donors.
+                </p>
+              </div>
+            </div>
+            <div class="hero-imag">
+              <img src="images/mzaxrr15947992449652-3e965400-b2fe-428b-b707-ffbb70c6cc76.jpg" alt="slide one" />
+            </div>
           </div>
         </div>
-        <div class="hero-imag">
-          <img src="images/mzaxrr15947992449652-3e965400-b2fe-428b-b707-ffbb70c6cc76.jpg" alt="slide one" />
+
+        <div class="mySlides fade">
+          <div class="grid-1X2 container-width grid-hero">
+            <div class="red">
+              <div class="hero-desc hero-2">
+                <h3 class="hero-heading">His Excellency Hem Vanndy chaired of CCC</h3>
+                <p> His Excellency Hem Vanndy chaired the Country Dialogue (on 22-23 January 2020 at Phnom Penh Hotel), the open and inclusive forum for all stakeholders, communities, CSOs, donors and DPs to develop new Funding Request Applications for HIV/AIDS, Tuberculosis and Resilient and Sustainable System for Health in Cambodia for the period of 2021-2023.
+                </p>
+              </div>
+            </div>
+            <div class="hero-imag">
+              <img src="images/2-299f2efa-ffaf-424f-ae67-bb8f4627770b.jpg" alt="slide two" />
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div class="mySlides fade">
+          <div class="grid-1X2 container-width grid-hero">
+            <div class="red">
+              <div class="hero-desc hero-2">
+                <h3 class="hero-heading">7th CCC meeting 8 sept 2022</h3>
+                <p>The 7th CCC meeting was held on 08 September 2022 and presided over by H.E. Mr. Hem Vanndy, CCC Chair. Excellency CCC Chair started the physical meeting by warmly welcoming all the participants, and asked the CCC Secretariat to confirm the quorum required for the meeting, then introduced agenda of the meeting for comment and adoption. 
+                </p>
+              </div>
+            </div>
+            <div class="hero-imag">
+              <img src="images/images2/3-c4e5f96b-e777-49fb-81c1-b01a6130b4aa.jpg" alt="slidethree"/>
+            </div>
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
     </section>
-  </header>
+  <!-- </header>  -->
   <div class="block1">
     <div class="block">
       <h1>HOME</h1>
@@ -227,8 +277,8 @@
       </article>
       <article class="course-card">
         <div class="course-image">
-          <img src="images3/Liane-Davey-Hybrid-Teams-Social-Size-3b3c9159-d4e8-4f25-8eb0-5538c7685969.jpg"/>
-            alt="meeting" />
+          <img src="images3/Liane-Davey-Hybrid-Teams-Social-Size-3b3c9159-d4e8-4f25-8eb0-5538c7685969.jpg" />
+          alt="meeting" />
         </div>
         <div class="course">
           <h3 class="course-heading">Cambodia in partnership with stakeholder
@@ -361,5 +411,6 @@
   </div>
   </div>
 </body>
+<script src="/java/main.js"></script>
 
 </html>
