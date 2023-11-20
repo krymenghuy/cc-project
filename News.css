@@ -201,14 +201,6 @@ height:30%;
   display:block;
    color: #00b2ff;
 } 
-/* .fa-solid fa-caret-down{
-  gap:0 1rem;
-} */
-
-
-/* /* input   */{
-height: 20px; 
-}
 ul {
   list-style-type: none;
 }
@@ -514,7 +506,7 @@ input:hover{
 .drop-downfirst>li{
   height:70px;
   /* background-color:red; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
   padding: 2rem;
 }
