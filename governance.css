@@ -285,7 +285,8 @@ input:hover{
     text-align: center; 
       width:50%;
        font-size:2rem;
-   background-color:#396b8c;
+       color:white;
+   /* background-color:white; */
  }
  .lastblock{
    display:flex;

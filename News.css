@@ -390,17 +390,7 @@ input:hover{
   display:grid;
   grid-template-columns:auto auto auto;
 }  */
-.TB{
-    margin:2rem 2rem;
-    /* height: 300px; */
-    background-color:white;
-    /* color: black; */
-    width: 100%;
-    font-size:3px;
-}
-.TB a:hover{
-  color: aqua;
-}
+
 .nav-link:hover > a {
   color: #00b2ff;
  }
@@ -441,13 +431,16 @@ input:hover{
      grid-template-columns: repeat(3,1fr);
      gap:2rem;
    } 
+   p{
+   padding:1rem;
+   }
    .course{
       height:50%;  
      width: 100%;
      /* padding:10px 0;
      padding-left: 30px; */
      padding: 15px;
-     background-color:rgb(251, 240, 240);  
+     background-color:#eae6df;  
    }
    .course-heading{
     color:black;

@@ -407,7 +407,8 @@ input:hover{
 }
 i{
   display:inline-block;
-    padding-top:5rem 0; 
+    /* padding-top:5rem 0;   */
+     padding: 0 0.5rem; 
 }
 .btn{
   width:270px;

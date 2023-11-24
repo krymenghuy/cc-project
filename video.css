@@ -269,13 +269,12 @@ input:hover{
    justify-content: center;
    align-items:center; */
    text-align: center;
-   border:3px solid #396b8c;
+   /* border:3px solid #396b8c; */
    padding:2rem;
    margin: 2rem auto;
+   width: 50%;
    /* width: 700px; */
-   border-left:none;
-   border-right: none;
-   border-top: none; 
+   border-bottom: 3px solid #396b8c;
    color:#396b8c;
  } 
  .sentence{
@@ -438,14 +437,16 @@ input:hover{
   .grid-1x4{
     display: grid;
     grid-template-columns: repeat(3,2fr);
-    gap:2rem;
+    gap:4rem 2rem;
+    /* margin: 3rem; */
+    padding: 2rem 0;
   } 
   .video{
-     height:40%;
+     height:50%;
      width:100%; 
      padding:10px 0; 
     padding-left: 30px;
-    background-color: #396b8c;
+    /* background-color: #396b8c; */
   }
   .grid-video1 iframe{
     width: 100%;
