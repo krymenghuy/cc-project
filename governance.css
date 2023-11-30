@@ -379,7 +379,8 @@ input:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-     text-align: center; 
+     text-align: center;
+     color:white; 
     background-color:#396b8c;
   }
    .lastblock{

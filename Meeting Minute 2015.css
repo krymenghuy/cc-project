@@ -1,3 +1,6 @@
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 :root {
   --color-light: white;
@@ -283,6 +286,7 @@ input:hover{
     text-align: center; 
      width:50%; 
      padding: 2rem;
+     color:white;
    background-color:#396b8c;
  }
  .lastblock{

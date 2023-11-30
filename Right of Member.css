@@ -286,6 +286,7 @@ input:hover{
       width:50%;
        font-size:2rem;
    background-color:#396b8c;
+   color:white;
  }
  .lastblock{
    display:flex;
@@ -379,6 +380,7 @@ input:hover{
     justify-content: center;
     align-items: center;
      text-align: center; 
+     color:white;
     background-color:#396b8c;
   }
    .lastblock{

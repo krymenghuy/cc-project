@@ -285,6 +285,7 @@ input:hover{
     text-align: center; 
       width:50%;
        font-size:2rem;
+       color:white;
    background-color:#396b8c;
  }
  .lastblock{
@@ -378,6 +379,7 @@ input:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white;
      text-align: center; 
     background-color:#396b8c;
   }

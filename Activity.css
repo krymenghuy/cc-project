@@ -284,7 +284,8 @@ input:hover{
      align-items: center;
      text-align: center;  
      /* width:100%;  */
-     padding:3rem; 
+     padding:3rem;
+     color:white; 
    background-color:#396b8c;
  }
  .lastblock{
