@@ -443,10 +443,14 @@ input:hover{
     color:white;
 }
 .btn-primary{
-    background-color:gray; 
-
-    
+    background-color:gray;     
 }
+.icon-btn{
+  height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
 .buttom{
     display:flex;
     justify-content: center;

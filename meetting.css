@@ -62,7 +62,7 @@ a {
   text-decoration: none;
 }
 .eng {
-  border: 2px solid #f5f5f5 ;
+  border: 2px solid white ;
   padding: 7px 20px;
 }
 .top-page {
@@ -85,6 +85,10 @@ a {
  align-items: center; 
   background-color:#396b8c;
   /* padding: 20px; */
+}
+.top-manu{
+  width: 100%;
+  background-color:white;
 }
 /* container-width */
 .container-width{

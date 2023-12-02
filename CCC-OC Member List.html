@@ -10,7 +10,11 @@
 
 <body>
   <header class="body-one">
-    <div class="first-page">
+    <button onclick="scrollToTop()" id="backToTopBtn">
+      <div class="my_btn"><i class="fa-solid fa-angles-up"></i></div></i>
+      </button>
+      <div class="top-manu">
+    <div class="first-page container-width">
       <div class="photo">
         <img src="images/logo - Copy.png" alt="logo">
       </div>
@@ -23,6 +27,7 @@
           <span>ខ្មែរ</span>
         </a>
       </div>
+    </div>
     </div>
     <section class="top-page">
       <nav class="navecation container-width">
@@ -58,7 +63,7 @@
               <div class="new-alink drop-down-1"><a class=" active alink" href="#">Oversight Committes<i class="fa-solid fa-chevron-right open-icon"></i></a>
                 <!-- <div class="drop-down4"> -->
                   <ul class=" drop-downfirst">
-                    <li><a class=" active drop-link" href="CCC-OC Member List.html">CCC Oversight Plan</a></li>
+                    <li><a class=" active drop-link" href="CCC-OC Member List.html">CCC-OC Member List</a></li>
                     <li><a class="drop-link" href="CCC-OC Terms of Reference.html">CCC Term of Reference</a></li>
                   </ul>
                 </div>
@@ -146,11 +151,12 @@
       <div class="container">
         <input type="text" placeholder="Research" />
       </div>
-</section>      
+</section>  
+     <div class="PDF-all container-width">    
         <div class="block1">
             <h1>CCC-OC Member List</h1>
         </div>
-        <div class="PDF grid-1x5 container-width ">
+        <div class="PDF grid-1x5 ">
             <div class="PDF-1">
                 <div class="img">
                     <img src="images3/photo pdf.png" alt="">
@@ -159,7 +165,7 @@
                     <h2>CCC OVERSIGHT COMMITTEE MEMBERS LIST</h2>
                     <div class="file">
                         <p>Link File :</p>
-                        <a class="file-2"href="#">File</a>
+                        <a class="file-2"href="#"><span>File<span></a>
                     </div>
                 </div>
             </div>
@@ -171,7 +177,7 @@
                     <h2>CCC OVERSIGHT COMMITTEE MEMBERS LIST</h2>
                     <div class="file">
                         <p>Link File :</p>
-                        <a class="file-2"href="#">File</a>
+                        <a class="file-2"href="#"><span>File</span></a>
                     </div>
                 </div>
             </div>
@@ -183,18 +189,18 @@
                     <h2>CCC OVERSIGHT COMMITTEE MEMBERS LIST</h2>
                     <div class="file">
                         <p>Link File :</p>
-                        <a class="file-2"href="#">File</a>
+                        <a class="file-2"href="#"><span>File</span></a>
                     </div>
                 </div>
             </div>
-            
+            </div>
         </div>
-        <div class="buttom">
-            <button class="btn btn-primary"><i class="fa-solid fa-angles-left"></i>Previous</button>
+        <!-- <div class="buttom">
+            <button class="btn btn-primary"><i class="fa-solid fa-angles-left icon"></i>Previous</button>
              <div class="buttom">
-             <button class="btn btn-primary">next<i class="fa-solid fa-angles-right"></i></button>
+             <button class="btn btn-primary">Next<i class="fa-solid fa-angles-right icon"></i></button>
               </div> 
-        </div> 
+        </div>  -->
          <div class="lastblock ">
          <!-- <div class="lastblock-1"> -->
          <p class="sentence">The Country Coordinating Committee (CCC for GFATM)/CCC Secretariat Office
@@ -204,5 +210,5 @@
         </div> 
     </header>
 </body>
-
+<script src="/java/main.js"></script>
 </html>
