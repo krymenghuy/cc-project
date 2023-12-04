@@ -10,7 +10,11 @@
 
 <body>
   <header class="body-one">
-    <div class="first-page">
+      <button onclick="scrollToTop()" id="backToTopBtn">
+        <div class="my_btn"><i class="fa-solid fa-angles-up"></i></div></i>
+        </button>
+        <div class="top-manu">
+    <div class="first-page container-width ">
       <div class="photo">
         <img src="images/logo - Copy.png" alt="logo">
       </div>
@@ -23,6 +27,7 @@
           <span>ខ្មែរ</span>
         </a>
       </div>
+    </div>
     </div>
     <section class="top-page">
       <nav class="navecation container-width">
@@ -148,7 +153,7 @@
       </div>
 </section>
 <div class="PDF-all container-width">
-        <div class="PDF">
+        <div class="PDF grid-1x5">
             <div class="PDF-1">
                 <div class="img">
                     <img src="images3/photo pdf.png" alt="">
@@ -157,17 +162,22 @@
                     <h2>Oversight Plan</h2>
                     <div class="file">
                         <p>Link File :</p>
-                        <a class="file-2"href="#">File</a>
+                        <a class="file-2"href="#"><span>File</span></a>
                     </div>
                 </div>
             </div>
-          </div>
+            </div>
+            <div class="buttom-2">
+              <div class="button-first">
              <div class="buttom">
-                <button class="btn btn-primary"><i class="fa-solid fa-angles-left"></i>Previous</button>
-                 <div class="buttom">
-                 <button class="btn btn-primary ">next<i class="fa-solid fa-angles-right"></i></button>
-                  </div> 
+                <button class=" btn-left"><i class="fa-solid fa-angles-left icon-left"></i>Previous</button>
+                 <!-- <div class="buttom"> -->
+                 <button class=" btn-Right ">Next<i class="fa-solid fa-angles-right icon-right"></i></button>
+                  <!-- </div>  -->
                  </div> 
+                 </div>
+                 </div>
+        </div>
         </div>
          <div class="lastblock ">
          <!-- <div class="lastblock-1"> -->
@@ -178,5 +188,5 @@
         </div> 
     </header>
 </body>
-
+<script src="/java/main.js"></script>
 </html>

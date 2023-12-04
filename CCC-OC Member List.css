@@ -617,30 +617,7 @@ li{
   display:grid;
   grid-template-columns:repeat(3,1fr);
 } 
-.btn{
-    font-size:2rem;
-    font-weight: bold;
-    padding:1.3rem 2rem;
-    border-radius:10px; 
-    border:2.5px solid gray;
-    box-shadow: 0 0 30px gray;
-    cursor:no-drop;
-    color:white;
-}
-.btn-primary{
-    background-color:gray; 
 
-    
-}
-.buttom{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:3rem;
-    margin:2rem 0;
-    /* height:200px; */
-  
-} 
 .drop-downfirst{
   width: 400px;
   /* top: 0; */

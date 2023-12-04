@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meeting</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="meeting Minute 2023.css">
+    <link rel="stylesheet" href="meeting Minute 2022.css">
 </head>
 
 <body>
     <header class="body-one">
-        <div class="first-page">
+      <button onclick="scrollToTop()" id="backToTopBtn"><div class="my_btn"><i class="fa-solid fa-angles-up"></i></div></i></button>
+      <div class="top-manu">
+        <div class="first-page container-width">
             <div class="photo">
                 <img src="images/logo - Copy.png" alt="logo">
             </div>
@@ -25,6 +27,8 @@
                 </a>
             </div>
         </div>
+        </div>
+        
         <section class="top-page">
           <nav class="navecation container-width">
             <ul class="nav-list">
@@ -69,19 +73,19 @@
               <li class="nav-link services"><a href="#" class=" active a-link">Document<span class="icon"><i class="fa-solid fa-chevron-down"></i></span></a>
                 <ul class="drop-down">
                   <li class="block-alink">
-                  <div class=" new-alink drop-down-1"><a class=" active alink" href="#">CCC Document<i class="fa-solid fa-chevron-right open-icon"></i></a>
+                  <div class=" new-alink drop-down-1"><a class="alink" href="#">CCC Document<i class="fa-solid fa-chevron-right open-icon"></i></a>
                       <ul class=" drop-downfirst">
                         <li><a class="drop-link " href="CCC Oversight Plan.html">CCC Oversight Plan</a></li>
-                        <li><a class="drop-link active" href="CCC Governance Manual25072019_VH-9Aug2019.html">CCC Governance
+                        <li><a class="drop-link " href="CCC Governance Manual25072019_VH-9Aug2019.html">CCC Governance
                             Manual25072019_VH-9Aug2019</a></li>
                         <li><a class="drop-link" href="other.html">Other</a></li>
                       </ul>
                     </div>
                   </li>
                   <li class="block-alink">
-                  <div class=" new-alink drop-down-1"><a class="alink"href>Meeting Minute<i class="fa-solid fa-chevron-right open-icon"></i></a>
+                  <div class=" new-alink drop-down-1"><a class=" active  alink"href>Meeting Minute<i class="fa-solid fa-chevron-right open-icon"></i></a>
                       <ul class=" drop-downfirst">
-                        <li><a class="drop-link" href="CCC-OC.html">CCC-OC</a></li>
+                        <li><a class=" active drop-link" href="CCC-OC.html">CCC-OC</a></li>
                         <li><a class="drop-link" href="CCC.html">CCC</a></li>
                       </ul>
                     </div>
@@ -147,8 +151,8 @@
           <div class="container">
             <input type="text" placeholder="Research" />
           </div>
-    </section>     
-        <div class="navigation-all">
+    </section>        
+        <div class="navigation-all container-width">
         <nav class="navigation-1">
         <div class="left-nav">
             <div class="left-link">
@@ -192,11 +196,8 @@
          <p class="sentence">The Country Coordinating Committee (CCC for GFATM)/CCC Secretariat Office
             Building #57, Street #608, Corner 307, Boeung Kok II, Toul Kok, Phnom Penh, Cambodia
             cccsec_m@ccmcambodia.org+855 17 666 296</p>
-            <button claas="up">
-                <i class="fa-solid fa-angles-up"></i>
-            </button>
         </div> 
     </header>
 </body>
-
+<script src="/java/main.js"></script>
 </html>
