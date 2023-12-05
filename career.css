@@ -441,7 +441,7 @@ i{
   color: #00b2ff;
  }
 .active{
-  color:#00b2ff;
+  color:#00b2ff !important;
 }
 
 

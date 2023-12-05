@@ -599,10 +599,12 @@ li{
    
 } 
 .file>a{
-  border: 1px solid #eee;
-  padding:2px 5px;
   font-size: 17px;
-  margin: 0 0 0 8px;
+    margin: 0 0 0 8px;
+    padding: 2px 6px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #396b8c;
 }
 .file>p{
   font-size: 17px;
