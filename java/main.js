@@ -32,10 +32,17 @@ function showBackToTopButton() {
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     button.classList.add("show");
+    
+  } else {
+    
+    button.classList.remove("show");
+  }
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
-    button.classList.remove("show");
+    
   }
 }
 

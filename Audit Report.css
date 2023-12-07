@@ -226,7 +226,7 @@ h5 {
  }   
  .nav-link>a{ 
    display:flex; 
-   padding:0.5rem; 
+   /* padding:0.5rem;  */
   color:white;
   font-weight: 600;
   /* gap:2rem; */

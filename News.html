@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="News.css" />
+  <link rel="stylesheet" href="Activity.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
   <header class="body-one">
-    <div class="first-page">
+    <button onclick="scrollToTop()" id="backToTopBtn">
+      <div class="my_btn"><i class="fa-solid fa-angles-up"></i></div></i>
+      </button>
+      <div class="top-manu">
+    <div class="first-page container-width">
       <div class="photo">
         <img src="images/logo - Copy.png" alt="logo">
       </div>
@@ -24,10 +28,11 @@
         </a>
       </div>
     </div>
+    </div>
     <section class="top-page">
       <nav class="navecation container-width">
         <ul class="nav-list">
-          <li class="nav-link a-link"><a href="index.html" >Home</a></li>
+          <li class="nav-link a-link"><a href="index.html">Home</a></li>
 
           <li class="nav-link  services"><a href="#" class="a-link">AboutCCC<span class="icon"><i class="fa-solid fa-chevron-down"></i></span></a> 
             <ul class="drop-down">
@@ -95,7 +100,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-link services"><a href="#"class="a-link">GFSTM Grant<span class="icon"><i class="fa-solid fa-chevron-down"></i></span></a>
+          <li class="nav-link services"><a href="#"class=" a-link">GFSTM Grant<span class="icon"><i class="fa-solid fa-chevron-down"></i></span></a>
             <ul class="drop-down">
               <li><a class="drop-link" href="TB HIV.html">TB/HIV</a></li>
               <li><a class="drop-link" href="TB.html">TB</a></li>
@@ -122,8 +127,8 @@
               <li class="block-alink">
               <div class="  new-alink drop-down-1"><a class="alink" href>principal Recipient UNOPS<i class="fa-solid fa-chevron-right open-icon"></i></a>
                   <ul class=" drop-downfirst">
-                    <li><a class="drop-link" href="PUDR.html">PUDR</a></li>
-                    <li><a class="drop-link" href="Management Letter.html">Management Letter</a></li>
+                    <li><a class="drop-link" href="PUDR(1).html">PUDR</a></li>
+                    <li><a class="drop-link" href="Management Letter(1).html">Management Letter</a></li>
                     <li><a class="drop-link" href="Audit Report.html">Audit Report</a></li>
                   </ul>
                   </div>
@@ -135,7 +140,7 @@
           <li class="nav-link a-link"><a href="career.html">Career</a></li>
           <li class="nav-link services"><a href="#" class=" active a-link">Media<span class="icon"><i class="fa-solid fa-chevron-down"></i></span></a>
             <ul class="drop-down">
-              <li><a class=" active drop-link" href="News.html">News</a></li>
+              <li><a class="drop-link" href="News.html"class="active">News</a></li>
               <li><a class="drop-link" href="Video.html">Video</a></li>
               <li><a class="drop-link" href="Gallery.html">Gallery</a></li>
             </ul>
@@ -147,114 +152,109 @@
         <input type="text" placeholder="Research" />
       </div>
 </section>
-    <!-- </header>  -->
     <div class="block1">
-      <h1> NEW</h1>
+        <h1>New</h1>
+      </div>
     </div>
-  </div>
-  <section class="popular-courses">
-    <div class=" grid-1x3 ">
-      <article class="course-card ">
-        <div class="course-image">
-          <img src="images/meeting-icon-clipart-1-b3081bea-d98c-4a8d-9f71-cd77af172682.jpg" alt="meeting" />
+    <section class="popular-courses">
+      <div class=" grid-1x3 ">
+        <article class="course-card ">
+          <div class=" zoom course-image">
+              <img src="images/meeting-icon-clipart-1-b3081bea-d98c-4a8d-9f71-cd77af172682.jpg" alt="meeting" />
+            </div>
+            <div class="course">
+              <a href="#">
+              <h3 class="course-heading">The CCC shall normally hold four regular
+                meeting per calender year at...</h3></a>
+              <p>the CCC is a multii-section national platform to coordinate and
+                Global Fund activities against HIV/AIDS,TB
+                and... </p>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class=" zoom course-image">
+              <img src="images3/Liane-Davey-Hybrid-Teams-Social-Size-3b3c9159-d4e8-4f25-8eb0-5538c7685969.jpg"
+              alt="meeting" />
+            </div>
+            <div class="course">
+              <a href="">
+          
+              <h3 class="course-heading">Cambodia in partnership with stakeholder
+                constituencies, to promote...</h3></a>
+              <p>the CCC is a multii-section national platform to coordinate and
+                Global Fund activities against HIV/AIDS,TB
+                and... </p>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class=" zoom course-image">
+              <img src="images/team-meeting-0490e0ab-3634-46d1-9185-9c456a5419a0.jpg" alt="meeting" />
+            </div>
+            <div class="course">
+              <a href>
+                <h3 class="course-heading">Tubeculosis and malaria and to
+                  monitor and support the...</h3>
+              </a>
+              <p>the CCC is a multii-section national platform to coordinate and
+                Global Fund activities against HIV/AIDS,TB
+                and... </p>
+            </div>
+          </article>
+    
+          <article class="course-card">
+            <div class=" zoom course-image">
+              <img src="images/3-28fa05e1-418c-4cb7-94da-109cb9a1a700 (1).jpg" alt="meeting" />
+            </div>
+            <div class="course">
+              <a href="#">
+                <h3 class="course-heading">the CCC shall normally hold
+                  four regular meeting per calendar year at...</h3>
+              </a>
+              <p>the CCC is a multii-section national platform to coordinate and
+                Global Fund activities against HIV/AIDS,TB
+                and... </p>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class=" zoom course-image">
+              <img src="images/What-is-a-Strategic-Planning-Committee-0a660a15-828a-41a7-b36d-f4fa15d9236e.jpg"
+                alt="meeting" />
+            </div>
+            <div class="course">
+              <a href="#">
+                <h3 class="course-heading">TB and malaria ,and to oversee
+                  and support the implementation of activitie...</h3>
+              </a>
+              <p>the CCC is a multii-section national platform to coordinate and
+                Global Fund activities against HIV/AIDS,TB
+                and... </p>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class=" zoom course-image">
+              <img src="images/d7fba80bb1acad94333623537674f004-f75e9a62-295b-4bdc-9730-7755a29679fd.jpg" alt="meeting" />
+            </div>
+            <div class="course">
+              <a href="#">
+                <h3 class="course-heading">CCC is to enhance performance
+                  of the Global Fund activities in Cambodia in...</h3>
+              </a>
+              <p>the CCC is a multii-section national platform to coordinate and
+                Global Fund activities against HIV/AIDS,TB
+                and... </p>
+            </div>
+          </article>
         </div>
-        <div class="course">
-          <a href="#">
-          <h3 class="course-heading">The CCC shall normally hold four regular
-            meeting per calender year at...</h3></a>
-          <p>the CCC is a multii-section national platform to coordinate and
-            Global Fund activities against HIV/AIDS,TB
-            and... </p>
+        </section>
+        <div class="lastblock ">
+          <!-- <div class="lastblock-1">' -->
+          <p class="sentence">The Country Coordinating Committee (CCC for GFATM)/CCC Secretariat Office
+            Building #57, Street #608, Corner 307, Boeung Kok II, Toul Kok, Phnom Penh, Cambodia
+            cccsec_m@ccmcambodia.org
+            +855 17 666 296</p>
         </div>
-      </article>
-      <article class="course-card">
-        <div class="course-image">
-          <img src="images3/Liane-Davey-Hybrid-Teams-Social-Size-3b3c9159-d4e8-4f25-8eb0-5538c7685969.jpg" alt="meeting" />
         </div>
-        <div class="course">
-          <a href="#">
-          <h3 class="course-heading">Cambodia in partnership with stakeholder
-            constituencies, to promote...</h3></a>
-          <p>the CCC is a multii-section national platform to coordinate and
-            Global Fund activities against HIV/AIDS,TB
-            and... </p>
-        </div>
-      </article>
-      <article class="course-card">
-        <div class="course-image">
-          <img src="images/team-meeting-0490e0ab-3634-46d1-9185-9c456a5419a0.jpg" alt="meeting" />
-        </div>
-        <div class="course">
-          <a href="#">
-            <h3 class="course-heading">Tubeculosis and malaria and to
-              monitor and support the...</h3>
-          </a>
-          <p>the CCC is a multii-section national platform to coordinate and
-            Global Fund activities against HIV/AIDS,TB
-            and... </p>
-        </div>
-      </article>
-
-      <article class="course-card">
-        <div class="course-image">
-          <img src="images/3-28fa05e1-418c-4cb7-94da-109cb9a1a700 (1).jpg" alt="meeting" />
-        </div>
-        <div class="course">
-          <a href="#">
-            <h3 class="course-heading">the CCC shall normally hold
-              four regular meeting per calendar year at...</h3>
-          </a>
-          <p>the CCC is a multii-section national platform to coordinate and
-            Global Fund activities against HIV/AIDS,TB
-            and... </p>
-        </div>
-      </article>
-      <article class="course-card">
-        <div class="course-image">
-          <img src="images/What-is-a-Strategic-Planning-Committee-0a660a15-828a-41a7-b36d-f4fa15d9236e.jpg"
-            alt="meeting" />
-        </div>
-        <div class="course">
-          <a href>
-            <h3 class="course-heading">TB and malaria ,and to oversee
-              and support the implementation of activitie...</h3>
-          </a>
-          <p>the CCC is a multii-section national platform to coordinate and
-            Global Fund activities against HIV/AIDS,TB
-            and... </p>
-        </div>
-      </article>
-      <article class="course-card">
-        <div class="course-image">
-          <img src="images/d7fba80bb1acad94333623537674f004-f75e9a62-295b-4bdc-9730-7755a29679fd.jpg" alt="meeting" />
-        </div>
-        <div class="course">
-          <a href="#">
-            <h3 class="course-heading">CCC is to enhance performance
-              of the Global Fund activities in Cambodia in...</h3>
-          </a>
-          <p>the CCC is a multii-section national platform to coordinate and
-            Global Fund activities against HIV/AIDS,TB
-            and... </p>
-        </div>
-      </article>
-    </div>
-    </section>
-    <div class="buttom">
-        <button class="btn btn-primary"><i class="fa-solid fa-angles-left"></i>Previous</button>
-         <div class="buttom">
-         <button class="btn btn-primary">next<i class="fa-solid fa-angles-right"></i></button>
-          </div> 
-         </div>
-</div>
- <div class="lastblock ">
- <!-- <div class="lastblock-1"> -->
- <p class="sentence">The Country Coordinating Committee (CCC for GFATM)/CCC Secretariat Office
-    Building #57, Street #608, Corner 307, Boeung Kok II, Toul Kok, Phnom Penh, Cambodia
-    cccsec_m@ccmcambodia.org
-    +855 17 666 296</p>
-</div> 
-</header>
-</body>
-
-</html>
+      </body>
+      <script src="/java/main.js"></script>
+      </html>
+  

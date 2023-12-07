@@ -69,20 +69,26 @@ a {
   /* border: 2px solid white; */
   padding: 7px 20px;
 }
+.icon-search{
+  position: relative;
+}
 
 .sticky{
+  position: sticky;
   top: 0;
   width: 100%;
   position: fixed;
   z-index: 9999999; 
 } 
 .top-page {
-  /* position: sticky;  */
-  top:0;
+   /* position: sticky; */
+  /* top: 0;  */
   display: flex;
  align-items: center; 
   background-color:#396b8c;
-  /* padding: 20px; */
+  font-size: 16px;
+  /* z-index: 9999999;  */
+  /* position: fixed; */
 }
 .top-manu{
   width: 100%;
@@ -94,8 +100,9 @@ a {
   margin:auto; 
 }
 .navecation {
+  /* position: absolute; */
   display: flex; 
-  /* padding: 1rem; */
+  justify-content: space-between;
   width: 100%;
   
 }
@@ -131,10 +138,12 @@ a {
  align-items: center;
  justify-content:start; 
  /* padding-top: 10px;  */
+ /* font-weight: 400; */
 } 
 .drop-down li .alink{
   transition: .5s all ease-in-out;
   color: black;
+  /* font-weight: 400; */
 }
 
 .alink:hover{
@@ -149,6 +158,7 @@ a {
   width:100%;
   border: 2px solid white;
   padding:  0 1rem;
+  font-weight: 400;
   /* /* padding-top:0.5rem;  */
 }
 /* .new-alink>a{
@@ -224,15 +234,14 @@ h5 {
 /* navecationbar/ */
  .nav-list {
   list-style-type: none;
-   margin: 1rem auto;  
-     /* gap:2rem;  */
-  /* transition: all 1s; */
+   /* margin: 1rem auto;   */
+   padding: 0 16px;
    display: flex;
   gap: 1rem; 
  }   
  .nav-link>a{ 
    display:flex; 
-   padding:0.5rem; 
+   /* padding:0.5rem;  */
   color:white;
   font-weight: 600;
   /* gap:2rem; */
@@ -241,7 +250,7 @@ h5 {
   display:flex;
   align-items: center;
   /* color:white; */
-  padding: 0 0.5rem;
+  padding: 16px 0;
 }
 .nav-link > a:hover {
   color:#00b2ff;
@@ -253,16 +262,28 @@ h5 {
 } 
 /* input */
 .container {
+  /* position:relative; */
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color:white;
+  font-weight: 600;
   /* height: 100%;
-  width:100% ; */
+  
   padding-right: 10px;
   background-color:#396b8c;
-  margin: 1rem 0;
+  /* margin: 0 160px; */
 }
+/* .icon-search{
+  position:absolute;
+    width: 30px;
+    height: 100%;
 
-input:focus {
+} */
+
+
+/* input:focus {
   border-color: dodgerblue;
   padding: 0.5rem 0.5rem;
   border-radius:10px;
@@ -272,7 +293,7 @@ input {
   padding:0.5rem; 
   border-radius:1rem;
   margin: 0 auto;
-}
+} */
 input:hover{
   border-color:lightblue;
  padding:0.5rem;
@@ -339,6 +360,7 @@ h1{
    border: 2px solid white;
     padding: 0 1rem; 
    margin-top: 0.5rem ;
+   font-weight: 400;
    /* padding-bottom:1rem; */ 
   } 
  .drop-link:hover{
@@ -394,27 +416,29 @@ h1{
   
   } 
 .grid-1X2 {
- display: grid;
- grid-template-columns: repeat(2, 1fr); 
+ display:flex;
+ /* grid-template-columns: repeat(2, 1fr);  */
+ width: 100%;
  
 }
 
 .grid-hero {
-  align-items: center;
+  /* align-items: center; */
   background-color:#396b8c; 
-   /* height:00px;  */
+   height:436px; 
   margin:3rem auto; 
   width: 80%;
   
+  
 }
  .hero-imag {
-  max-width:100%;
-  width: 100%; 
+  /* max-width:100%; */
+  width: 60%; 
   /* height:40rem ; */ 
 } 
 .hero-imag > img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   border: 0;
   /* width: 700px; */
   background-color: gray;
@@ -440,7 +464,7 @@ h1{
    padding-left: 15px;
   font-size: 14px;
   line-height: 25px;
-  height: 40%;
+  height: 60%;
   border-left:4px solid white;
    
  }
@@ -449,21 +473,24 @@ h1{
   padding-left: 15px;
   font-size: 14px;
   line-height: 25px;
-  height: 30%;
+  height: 40%;
   border-left:4px solid white;
   }
 .hero-3{
-    height:35%;
+    height:55%;
     border-left:4px solid white;
     padding:  0 0 0 14px;
   }
 
 
 .red{
+  width: 40%;
 border:2px solid #396b8c; 
  height:100%;  
  padding:30px;  
+ box-sizing: border-box;
 /* margin-top:-2rem; */
+box-sizing: border-box;
 } 
 /* block home */
 .block1{
@@ -550,12 +577,17 @@ p{
     margin: 0 auto;
     overflow: hidden;
   }
+  .zoom img {
+    width: 100%;
+    transition: transform .5s,filter 1.5s ease-in-out;
+  }
   
   .zoom:hover img {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
+
    /* p{
    padding:1rem;
    } */
