@@ -29,13 +29,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
-  /* background-color:; */
+  /* height: 200px; */
+  padding: 11px 0;
 }
 img {
   /* border: 5px solid white; */
-  width: 800px;
-  height: 200px; 
+  width: 700px;
+  height: 120px; 
 }
 .switch-lang {
   display: flex;
@@ -109,9 +109,6 @@ a {
 .drop-down>li{
   list-style-type:none ;
   height:100%; 
-   /* padding:1rem 0;   */
-   /* margin: 2rem ; */
-  /* font-weight: 60dag;  */
   cursor: pointer;
   text-decoration: none;
    /* overflow: hidden;/ */
@@ -123,13 +120,14 @@ a {
   z-index: 999999;
    background-color:white; 
   color:black;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   /* border-radius: 20px; */
-  width:15%;
+  width:330px;
   /* z-index:5; */
   transition: all 0.5 ease;
-  box-shadow: 0.5rem;
+  box-shadow: 0 0 10px #0000001a;
   display:none; 
+  padding: 1rem 0;
   border-radius: 10px; 
 }
 
@@ -153,29 +151,31 @@ a {
 }
 .new-alink{
   display: block;
-   right:-70px;  
-  /* margin: 2rem auto; */
+  position: relative;
+   /* right:-70px;  
+  margin: 2rem auto; */
   width:100%;
   border: 2px solid white;
   padding:  0 1rem;
   font-weight: 400;
   /* /* padding-top:0.5rem;  */
 }
+
 /* .new-alink>a{
   display:flex; 
   justify-content: center;
   align-items: center;
   
 }  */
-.new-alink:hover>a{
-   position: relative;
+.new-alink:hover> .alink{
+   /* position: relative; */
    left: 10px;
    color: #00b2ff;
 } 
 .block-alink{
   position: relative;
  border: 2px solid white; 
- padding-bottom: 1rem ; 
+ /* padding-bottom: 1rem ;  */
  
 }
  .drop-link{
@@ -234,10 +234,10 @@ h5 {
 /* navecationbar/ */
  .nav-list {
   list-style-type: none;
-   /* margin: 1rem auto;   */
+   margin: 0.5rem 0; 
    padding: 0 16px;
    display: flex;
-  gap: 1rem; 
+  gap: 1.3rem; 
  }   
  .nav-link>a{ 
    display:flex; 
@@ -275,29 +275,65 @@ h5 {
   background-color:#396b8c;
   /* margin: 0 160px; */
 }
-/* .icon-search{
-  position:absolute;
-    width: 30px;
-    height: 100%;
-
+/*search bar*/
+/* .search-area {
+  position: absolute;
+  right: 0;
+  top: 25%;
 } */
-
-
-/* input:focus {
-  border-color: dodgerblue;
-  padding: 0.5rem 0.5rem;
-  border-radius:10px;
+.nav-search {
+  list-style-type: none;
+  margin: 0.5rem 0;
+  /* padding: 0 16px; */
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
 }
-input {
-  border: 1px solid black; 
-  padding:0.5rem; 
-  border-radius:1rem;
-  margin: 0 auto;
-} */
-input:hover{
-  border-color:lightblue;
- padding:0.5rem;
-  padding:0.5rem;
+.search-area input[type=text] {
+  border: none;
+  outline: none;
+  border: 1px solid #396b8c;
+  padding: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 20px 0 0 20px;
+  transition: all .5s ease;
+}
+.search-area input[type=text].active {
+  width: 150px;
+  padding: 0px;
+  display: flex;
+  transition: .5s;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.search-area .search-icon.active {
+  transition: all .3s ease;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+}
+.search-area{
+  position: relative;
+}
+.search-area .btn-on-active.active {
+  display: flex;
+}
+.search-area .btn-on-active {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  transition: all .5s .3s ease;
+  cursor: pointer;
+  background-color: unset;
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 h1{
    
@@ -344,9 +380,13 @@ h1{
     left: 100%; 
    background-color:white;
    display:none;
-   border: 1px solid gray;
+   min-width: 370px;
+   max-width: 100%;
+   box-shadow: 0 0 10px #0000001a;
+   /* border: 1px solid gray; */
    transition: all .5s ease;
    /* gap: 2rem; */
+   padding: 1rem ;
    
  }
  .drop-link{
@@ -368,6 +408,7 @@ h1{
    color: #00b2ff;
    left: 10px;
  }
+
  .drop-down-1:hover .drop-downfirst{
    color:red;
    display:initial;
@@ -384,15 +425,11 @@ h1{
   /* display:flex; */
    /* padding-right:3rem; */
    border: 1px solid #396b8c;
-   /* width:20px;  */
-   /* margin: 2rem 0; */
-   padding:1rem 0.5rem;
-   /* padding-bottom:3rem; */
-   /* padding-top:2rem ; */
+   margin:0px 0px 0px 4px;
  }
  .open-icon{
    position: absolute;
-   left:190px;
+   left:280px;
    /* padding-left:3rem;  */
  }
  .icon-2{ 
