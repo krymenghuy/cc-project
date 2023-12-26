@@ -30,6 +30,9 @@
         </div>
         <section class="top-page">
           <nav class="navecation container-width">
+            <span class="icon-toggle" id="navButton">
+              <i class="fa-solid fa-bars"></i>
+            </span>
             <ul class="nav-list">
               <li class="nav-link a-link"><a href="index.html" >Home</a></li>
     
@@ -146,15 +149,765 @@
               </li>
               <li class="nav-link a-link"><a href="Contact Us.html">Contact Us</a></li>
             </ul>
+            <div class="nav-search">
+              <input type="text" placeholder="Search" class="search-open">
+              <i class="fa-solid fa-magnifying-glass open-search"></i>
+            </div>
           </nav>
-          <div class="container">
-            <input type="text" placeholder="Research" />
+         
+    </section>  
+    </header>
+    <section>
+      <div class="menu-responsive-cover" id="menu_responsive">
+    
+        </div>
+        <div class="menu-responsive menu-active" id="navMenu">
+          <div class="manu-header">
+            <div class="logo-ccc">
+              <a href="https://ccmcambodia.org">
+                <img class="logo-cam" src="https://ccmcambodia.org/images/logo/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="btnClose">
+              <span id="stopButton" class="close-menu cursor-pointer">
+                <i class="fas fa-times"></i>
+              </span>
+            </div>
           </div>
+    
+          <div class="menu-content">
+            <div class="grid grid-flow-row gap-5 pb-4">
+              <div class="menu-item">
+                <div class="flex items-center sub-menu-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-home h-5 w-5">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  <a class="aLink !font-poppinsAndHanuman" href="index.html">Home</a>
+                </div>
+              </div>
+              <!-- about menu -->
+              <!-- <div x-data="{ show: true }"> -->
+              <div class="menu-item relative">
+                <div class="flex items-center menu-icon">
+                  <a class="aLink flex gap-2 items-center menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-info h-5 w-5">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    About CCC </a>
+                  <!-- <div @click="show = !show" :aria-expanded="show ? 'true' : 'false'" aria-expanded="true"> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right h-5 w-5" x-show="!show" style="display: none;">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-down h-5 w-5" x-show="show">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <div class="dropdown-menu" style="display:block;" x-show="show" x-transition:enter.duration.300ms="">
+                <div class="grid gap-2 shadow-border ml-4 mt-1">
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="meeting.html">
+                      Meeting</a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="introduction.html">
+                      introduction </a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="Mandate.html">
+                      Mandate </a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="governance.html">
+                      governance </a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="Role and Responsibility.html">
+                      Roles and Responsibility </a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="Core Principles.html">
+                      Core Principles </a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="structure.html">
+                      Structure </a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="Office Bearers.html">
+                      Office Bearers </a>
+                  </div>
+                  <div class="sub-menu-item menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-4 w-4 ml-1 cursor-pointer">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <a class="aLink" href="CCC Secretariat.html">
+                      Secretariat </a>
+                  </div>
+                  <div class="menu-item relative">
+                    <div class="flex items-center justify-between">
+                      <div class="sub-menu-item menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="feather feather-chevron-right h-4 w-4 mr-1">
+                          <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                        Membership
+                      </div>
+                    </div>
+                    <div class="sub-dropdown-menu ml-[24px]">
+                      <div class="grid gap-2 shadow-border">
+                        <div class="menu-item flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="3"></circle>
+                          </svg>
+                          <a class="aLink" href="Membership.html">
+                            Membership </a>
+                        </div>
+                        <div class="menu-item flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="3"></circle>
+                          </svg>
+                          <a class="aLink" href="Right of Member.html">
+                            Right of Members </a>
+                        </div>
+                        <div class="menu-item flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="3"></circle>
+                          </svg>
+                          <a class="aLink" href="Responsibilities of the member.html">
+                            Responsibilities of the Members </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- committee -->
+              <div x-data="{ show: true }">
+                <div class="flex items-center menu-icon">
+                  <a class="aLink flex gap-2 items-center menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-package h-5 w-5">
+                      <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                      <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                      </path>
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    Committees </a>
+                  <!-- <div @click="show = !show" :aria-expanded="show ? 'true' : 'false'" aria-expanded="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right h-5 w-5" x-show="!show" style="display: none;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down h-5 w-5" x-show="show"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                    </div> -->
+                </div>
+                <div class="menu-item relative">
+    
+                  <div class="dropdown-menu" x-show="show" x-transition:enter.duration.300ms="">
+                    <div class="grid gap-2 shadow-border ml-4 mt-1">
+                      <div class="menu-item relative">
+                        <div class="flex items-center justify-between">
+                          <div class="sub-menu-item menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-chevron-right h-4 w-4 mr-1 icon-circle">
+                              <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            Oversight Committee
+                          </div>
+                        </div>
+                        <div class="sub-dropdown-menu ml-[24px]">
+                          <div class="grid gap-2 shadow-border">
+                            <div class="menu-item flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>
+                              <a class="aLink" href="CCC-OC Member List.html">
+                                CCC-OC Member List </a>
+                            </div>
+                            <div class="menu-item flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>
+                              <a class="aLink"
+                                href="CCC-OC Terms of Reference.html">
+                                CCC-OC Terms of Reference </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Document -->
+              <div class="menu-item relative">
+                <div class="flex items-center menu-icon">
+                  <a class="aLink flex gap-2 items-center menu-icon active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-bookmark h-5 w-5">
+                      <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Document </a>
+                  <div @click="show = !show" :aria-expanded="show ? 'true' : 'false'" aria-expanded="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-5 w-5" x-show="!show" style="display: none;">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-down h-5 w-5" x-show="show">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="dropdown-menu" x-show="show" x-transition:enter.duration.300ms="">
+                  <div class="grid gap-2 shadow-border ml-4 mt-1">
+                    <div class="menu-item relative">
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1 icon-circle">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          CCC Document
+                        </div>
+                      </div>
+                      <div class="sub-dropdown-menu ml-[24px]">
+                        <div class="grid gap-2 shadow-border">
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink"
+                              href="CCC Oversight Plan.html">
+                              CCC Oversight plan
+                            </a>
+                          </div>
+    
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink"
+                              href="CCC Governance Manual25072019_VH-9Aug2019.html">
+                              CCC Governance Manual 25072019_VH-9Aug2019
+                            </a>
+                          </div>
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink" href="Other.html">
+                              Others
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu-item relative">
+                        <div class="flex items-center justify-between">
+                          <div class="sub-menu-item menu-item active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-chevron-right h-4 w-4 mr-1">
+                              <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            Meeting Minute
+                          </div>
+                        </div>
+                        <div class="sub-dropdown-menu ml-[24px]">
+                          <div class="grid gap-2 shadow-border">
+                            <div class="menu-item flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>
+                              <a class="aLink active" href="CCC-OC.html">
+                                CCC-OC
+                              </a>
+                            </div>
+                            <div class="menu-item flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>
+                              <a class="aLink" href="CCC.html">
+                                CCC
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="menu-item relative">
+                        <div class="flex items-center justify-between">
+                          <div class="sub-menu-item menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-chevron-right h-4 w-4 mr-1">
+                              <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            Reports
+                          </div>
+                        </div>
+                        <div class="sub-dropdown-menu ml-[24px]">
+                          <div class="grid gap-2 shadow-border">
+                            <div class="menu-item flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>
+                              <a class="aLink" href="https://ccmcambodia.org/document/report/ccc-oc-oversight-visit">
+                                CCC-OC Oversight Visit
+                              </a>
+                            </div>
+                            <div class="menu-item flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>
+                              <a class="aLink" href="https://ccmcambodia.org/document/report/ccc-retreat-reports">
+                                CCC Retreat Reports
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- GFATM Grant     -->
+                <!-- <div x-data="{ show: true }"> -->
+                <div class="menu-item relative">
+                  <div class="flex items-center menu-icon">
+                    <a class="aLink flex gap-2 items-center menu-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-gift h-5 w-5">
+                        <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                        <rect x="2" y="7" width="20" height="5"></rect>
+                        <line x1="12" y1="22" x2="12" y2="7"></line>
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                      </svg>
+                      GFATM Grant </a>
+                    <!-- <div @click="show = !show" :aria-expanded="show ? 'true' : 'false'" aria-expanded="true"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-5 w-5" x-show="!show" style="display: none;">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-down h-5 w-5" x-show="show">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="dropdown-menu" x-show="show" x-transition:enter.duration.300ms="">
+                  <div class="grid gap-2 shadow-border ml-4 mt-1">
+                    <div class="menu-item relative">
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink !curosr-pointer" href="TB HIV.html">
+                            TB/HIV
+                          </a>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink !curosr-pointer" href="TB.html">
+                            TB
+                          </a>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink !curosr-pointer" href="HIV.HTML">
+                            HIV
+                          </a>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink !curosr-pointer" href="Malaria.html">
+                            Malaria
+                          </a>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink !curosr-pointer" href="RSSH.html">
+                            RSSH
+                          </a>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink !curosr-pointer" href="Multi-Countries TB Migrant.html">
+                            Multi-Countries TB Migrant
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+    
+              <!-- Principal Recipients     -->
+    
+              <div class="menu-item relative">
+                <div class="flex items-center menu-icon">
+                  <a class="aLink flex gap-2 items-center menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-book h-5 w-5">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    Principal Recipients </a>
+                  <div @click="show = !show" :aria-expanded="show ? 'true' : 'false'" aria-expanded="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-5 w-5" x-show="!show" style="display: none;">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-down h-5 w-5" x-show="show">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="dropdown-menu" x-show="show" x-transition:enter.duration.300ms="">
+                  <div class="grid gap-2 shadow-border ml-4 mt-1">
+                    <div class="menu-item relative">
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink">
+                            Principal Recipient MEF/MoH-LIT
+                          </a>
+                        </div>
+                      </div>
+                      <div class="sub-dropdown-menu ml-[24px]">
+                        <div class="grid gap-2 shadow-border">
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink" href="PUDR.html">
+                              PUDR </a>
+                          </div>
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink"
+                              href="Management Letter.html">
+                              Management Letter </a>
+                          </div>
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink"
+                              href="Audit Report.html">
+                              Audit Report </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menu-item relative">
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink">
+                            Principal Recipient UNOPS
+                          </a>
+                        </div>
+                      </div>
+                      <div class="sub-dropdown-menu ml-[24px]">
+                        <div class="grid gap-2 shadow-border">
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink" href="PUDR.html">
+                              PUDR</a>
+                          </div>
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink"
+                              href="Management Letter.html">
+                              Management Letter </a>
+                          </div>
+                          <div class="menu-item flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-disc h-2 w-2 mr-2 icon-circle">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <a class="aLink"
+                              href="Audit Report">
+                              Audit Report </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item relative">
+                <div class="flex items-center menu-icon">
+                  <a href="Activity.html" class="aLink flex gap-2 items-center menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-message-square h-5 w-5">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Activity </a>
+                </div>
+              </div>
+              <div class="menu-item relative">
+                <div class="flex items-center menu-icon">
+                  <a href="career.html" class="aLink flex gap-2 items-center menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-briefcase h-5 w-5">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Career </a>
+                </div>
+              </div>
+              <div class="menu-item relative">
+                <div class="flex items-center menu-icon">
+                  <a class="aLink flex gap-2 items-center menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-monitor h-5 w-5">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    Media </a>
+                  <div @click="show = !show" :aria-expanded="show ? 'true' : 'false'" aria-expanded="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right h-5 w-5" x-show="!show" style="display: none;">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-down h-5 w-5" x-show="show">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="dropdown-menu" x-show="show" x-transition:enter.duration.300ms="">
+                  <div class="grid gap-2 shadow-border ml-4 mt-1">
+                    <div class="menu-item relative">
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink" href="News.html">
+                            News </a>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink" href="video.html">
+                            Video </a>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <div class="sub-menu-item menu-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right h-4 w-4 mr-1">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                          </svg>
+                          <a class="aLink" href="Gallery.html">
+                            Gallery </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center menu-icon">
+                <a href="Contact Us.html" class="aLink flex gap-2 items-center menu-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-user h-5 w-5">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Contact Us</a>
+              </div>
     </section>    
-        <div class="navigation-all container-width">
-        <nav class="navigation-1">
-        <div class="left-nav">
-            <div class="left-link">
+    <div class="navigation-all container-width">
+      <nav class="navigation-1">
+      <div class="left-nav">
+          <div class="item-wrapper">
+              <div class="left-link">
+                  <div class="cover cover-1">
                 <!-- <div class="manu-list-1"> -->
                 <a href="#"></a>
                 <div class=" manu-list"><a href="Meeting Minute 2023.html">Meeting Minute 2023</a></div>
@@ -167,7 +920,8 @@
                 <div class=" manu-list"><a href="Meeting Minute 2016.html">Meeting Minute 2016</a></div>
                 <div class=" manu-list"><a href="Meeting Minute 2015.html">Meeting Minute 2015</a></div>
                 <div class=" manu-list"><a href="Meeting Minute 2014.html">Meeting Minute 2014</a></div>
-        <!-- </div>          -->
+        </div>         
+        </div>
         </div>
         </div>
         <div class="right-nav">
@@ -192,12 +946,121 @@
         </div>
          <div class="lastblock ">
          <!-- <div class="lastblock-1"> -->
-         <p class="sentence">The Country Coordinating Committee (CCC for GFATM)/CCC Secretariat Office
-            Building #57, Street #608, Corner 307, Boeung Kok II, Toul Kok, Phnom Penh, Cambodia
-            cccsec_m@ccmcambodia.org+855 17 666 296</p>
-        </div> 
+          <div class="sentence">
+            <p>The Country Coordinating Committee (CCC for GFATM)/CCC Secretariat Office</p>
+           <p>Building #57, Street #608, Corner 307, Boeung Kok II, Toul Kok, Phnom Penh, Cambodia</p>
+           <p>cccsec_m@ccmcambodia.org</p>
+           <p>+855 17 666 296</p>
+        </div>
     </header>
 </body>
+<script>
+  // button
+  window.onscroll = function () {
+    showBackToTopButton();
+  };
+  
+  function showBackToTopButton() {
+    var button = document.getElementById("backToTopBtn");
+    var header = document.querySelector(".top-page");
+  
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      button.classList.add("show");
+    } else {
+      button.classList.remove("show");
+    }
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  
+  var searchIcon = document.querySelector(".open-search");
+  var searchInput = document.querySelector(".search-open");
+  
+  var isOpen = false; // Flag to track the open/close state
+  
+  searchIcon.addEventListener("click", () => {
+    if (isOpen) {
+      // Close the search input
+      searchInput.style.width = "0";
+      searchInput.style.display = "none";
+      searchIcon.style.color = "#fff";
+    } else {
+      // Open the search input
+      searchInput.style.width = "210px";
+      searchInput.style.display = "flex";
+      searchIcon.style.color = "#000";
+    }
+  
+    isOpen = !isOpen; // Toggle the open/close state
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+  const navButton = document.getElementById('navButton');
+  const stopButton = document.getElementById('stopButton');
+  const navMenu = document.getElementById('navMenu');
+  const menu_responsive = document.getElementById('menu_responsive');
+  
+  // Open navigation menu
+  navButton.addEventListener('click', function() {
+    navMenu.style.left = '0';
+    menu_responsive.style.display = 'block';
+    menu_responsive.style.left = '0';
+    navMenu.classList.remove('closed');
+    stopButton.style.display = 'block';
+    navButton.style.display = 'none';
+  });
 
-<script src="/java/main.js"></script>
+  // Close navigation menu
+  stopButton.addEventListener('click', function() {
+    navMenu.style.left = '-100%';
+    menu_responsive.style.display = 'none';
+    navMenu.classList.add('closed');
+    stopButton.style.display = 'none';
+    navButton.style.display = 'block';
+  });
+  // Close navigation menu
+  menu_responsive.addEventListener('click', function() {
+    navMenu.style.left = '-100%';
+    menu_responsive.style.display = 'none';
+    navMenu.classList.add('closed');
+    stopButton.style.display = 'none';
+    navButton.style.display = 'block';
+  });
+  
+})
+
+
+ /* script menu responsive */
+ toggleMenuResponsive();
+ function toggleMenuResponsive() {
+     $('body').on('click', '.menu-bar', function() {
+         $('.menu-responsive').toggleClass('menu-active');
+         $('.menu-responsive-cover').toggleClass('menu-active');
+         $("body").css("overflow", "hidden");
+     });
+     $('body').on('click', '#btnClose', function() {
+         $('.menu-responsive').toggleClass('menu-active');
+         $('.menu-responsive-cover').toggleClass('menu-active');
+         $("body").css("overflow", "auto");
+     });
+     $('body').on('click', '.menu-responsive-cover', function() {
+         $('.menu-responsive').toggleClass('menu-active');
+         $('.menu-responsive-cover').toggleClass('menu-active');
+         $("body").css("overflow", "auto");
+     });
+    }
+  
+  
+  
+    </script>
 </html>
